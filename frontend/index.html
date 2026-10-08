@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f97316">
+    <title>Order Your Favourite Food | Docker Eats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-nav"></header>
+<main>
+  <section class="hero container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Fast · Fresh · Local</span>
+        <h1>Order your <em>favourite</em> food, delivered.</h1>
+        <p class="lead">Browse top restaurants, build your basket and track every order — all in a few taps.</p>
+        <form class="search-box" id="hero-search">
+          <input id="hero-q" type="search" placeholder="Search burgers, pizza, sushi…" aria-label="Search restaurants">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <div class="chips">
+          <a class="chip" href="restaurants.html?q=burger">🍔 Burgers</a>
+          <a class="chip" href="restaurants.html?q=pizza">🍕 Pizza</a>
+          <a class="chip" href="restaurants.html?q=sushi">🍣 Sushi</a>
+          <a class="chip" href="restaurants.html">🍽️ All</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="stat-restaurants">–</strong><span>Restaurants</span></div>
+          <div><strong>20 min</strong><span>Avg. delivery</span></div>
+          <div><strong>4.8 ★</strong><span>Customer rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="plate">🍔</div>
+        <div class="float-card a"><span class="ico">⏱️</span><div><b>15–20 mins</b>Estimated delivery</div></div>
+        <div class="float-card b"><span class="ico">⭐</span><div><b>4.8 rating</b>Loved by foodies</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><h2>Popular restaurants</h2><a class="link-arrow" href="restaurants.html">See all →</a></div>
+    <div class="grid" id="featured-grid"></div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><h2>How it works</h2></div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Pick a restaurant</h3><p>Browse local favourites and explore their full menus.</p></div>
+      <div class="step"><div class="num">2</div><h3>Fill your basket</h3><p>Add items, adjust quantities and review your total.</p></div>
+      <div class="step"><div class="num">3</div><h3>Place your order</h3><p>Check out in one click and follow its status anytime.</p></div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f97316">
+    <title>Menu | Docker Eats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-nav"></header>
+<main class="container">
+  <div class="breadcrumb"><a href="restaurants.html">Restaurants</a> / <span id="crumb-name">Menu</span></div>
+  <div class="menu-hero" id="menu-hero"></div>
+  <div class="toolbar">
+    <div class="filter-row" id="filters"></div>
+    <label class="input-icon"><i>🔎</i><input id="menu-search" type="search" placeholder="Search this menu" aria-label="Search menu"></label>
+  </div>
+  <div class="menu-list" id="menu-container"></div>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
